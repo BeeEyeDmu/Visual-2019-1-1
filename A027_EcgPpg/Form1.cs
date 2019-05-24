@@ -107,10 +107,10 @@ namespace A027_EcgPpg
       chart1.ChartAreas.Add("Draw");
 
       chart1.ChartAreas["Draw"].BackColor = Color.Black;
-      chart1.ChartAreas["Draw"].AxisX.Minimum = 0;                                           //최소값
+      chart1.ChartAreas["Draw"].AxisX.Minimum = 0;    //최소값
       chart1.ChartAreas["Draw"].AxisX.Maximum = ecgCount;
       chart1.ChartAreas["Draw"].AxisX.Interval = 50;
-      chart1.ChartAreas["Draw"].AxisX.MajorGrid.LineColor = Color.Gray;                     // 선 색
+      chart1.ChartAreas["Draw"].AxisX.MajorGrid.LineColor = Color.Gray; // 선 색
       chart1.ChartAreas["Draw"].AxisX.MajorGrid.LineDashStyle = ChartDashStyle.Dash;  //모눈선 스타일
 
       chart1.ChartAreas["Draw"].AxisY.Minimum = -2;
@@ -140,7 +140,6 @@ namespace A027_EcgPpg
       {
         chart1.Series["PPG"].Points.Add(v);
       }
-
     }
 
     // Auto Scroll 메뉴
