@@ -1,0 +1,44 @@
+﻿<Window x:Class="A013_SimpleCalc.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:A013_SimpleCalc"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="360" Width="300" 
+        MinWidth="200" MinHeight="360">
+  <DockPanel VerticalAlignment="Stretch">
+    <TextBox Margin="10" FontSize="30" Height="45" 
+             DockPanel.Dock="Top" TextAlignment="Right">0</TextBox>
+    <Grid Margin="10" MinHeight="240">
+      <Grid.ColumnDefinitions>
+        <ColumnDefinition/>
+        <ColumnDefinition/>
+        <ColumnDefinition/>
+        <ColumnDefinition/>
+      </Grid.ColumnDefinitions>
+      <Grid.RowDefinitions>
+        <RowDefinition/>
+        <RowDefinition/>
+        <RowDefinition/>
+        <RowDefinition/>
+      </Grid.RowDefinitions>
+      <Button Margin="3" Grid.Row="0" Grid.Column="0" FontSize="15">7</Button>
+      <Button Margin="3" Grid.Row="0" Grid.Column="1" FontSize="15">8</Button>
+      <Button Margin="3" Grid.Row="0" Grid.Column="2" FontSize="15">9</Button>
+      <Button Margin="3" Grid.Row="0" Grid.Column="3" FontSize="15">+</Button>
+      <Button Margin="3" Grid.Row="1" Grid.Column="0" FontSize="15">4</Button>
+      <Button Margin="3" Grid.Row="1" Grid.Column="1" FontSize="15">5</Button>
+      <Button Margin="3" Grid.Row="1" Grid.Column="2" FontSize="15">6</Button>
+      <Button Margin="3" Grid.Row="1" Grid.Column="3" FontSize="15">-</Button>
+      <Button Margin="3" Grid.Row="2" Grid.Column="0" FontSize="15">1</Button>
+      <Button Margin="3" Grid.Row="2" Grid.Column="1" FontSize="15">2</Button>
+      <Button Margin="3" Grid.Row="2" Grid.Column="2" FontSize="15">3</Button>
+      <Button Margin="3" Grid.Row="2" Grid.Column="3" FontSize="15">×</Button>
+      <Button Margin="3" Grid.Row="3" Grid.Column="0" FontSize="15">.</Button>
+      <Button Margin="3" Grid.Row="3" Grid.Column="1" FontSize="15">0</Button>
+      <Button Margin="3" Grid.Row="3" Grid.Column="2" FontSize="15">=</Button>
+      <Button Margin="3" Grid.Row="3" Grid.Column="3" FontSize="15">÷</Button>
+    </Grid>
+  </DockPanel>
+</Window>
