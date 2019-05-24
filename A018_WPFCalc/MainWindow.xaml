@@ -1,0 +1,126 @@
+﻿<Window x:Class="A018_WPFCalc.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:A018_WPFCalc"
+        mc:Ignorable="d"
+ Title="윈도우 표준 계산기" MinHeight="550" MinWidth="300" Width="400" 
+   Height="550" Background="WhiteSmoke">
+  <DockPanel VerticalAlignment="Stretch">
+    <Grid Height="100" DockPanel.Dock="Top">
+      <TextBox Name="txtExp" FontSize="16" 
+        HorizontalContentAlignment="Right" Margin="15" 
+        BorderThickness="0" Background="WhiteSmoke"></TextBox>
+      <TextBox Name="txtResult" Height="50" 
+       FontWeight="Bold" FontSize="36" VerticalAlignment="Bottom"  
+       HorizontalContentAlignment="Right" 
+       VerticalContentAlignment="Bottom"  Margin="10,10,15,10" 
+       BorderThickness="0" Background="WhiteSmoke">0</TextBox>
+    </Grid>
+    <Grid Height="50" Background="LightGray" DockPanel.Dock="Top">
+      <Grid.ColumnDefinitions>
+        <ColumnDefinition/>
+        <ColumnDefinition/>
+        <ColumnDefinition/>
+        <ColumnDefinition/>
+        <ColumnDefinition/>
+      </Grid.ColumnDefinitions>
+      <Button Name="btnMC" Grid.Column="0" FontSize="14" 
+         BorderThickness="0" FontWeight="Bold" Background="WhiteSmoke" 
+         IsEnabled="False">MC</Button>
+      <Button Name="btnMR" Grid.Column="1" FontSize="14" 
+         BorderThickness="0" FontWeight="Bold" Background="WhiteSmoke" 
+         IsEnabled="False">MR</Button>
+      <Button Name="btnMPlus" Grid.Column="2" FontSize="14" 
+         BorderThickness="0" FontWeight="Bold" 
+         Background="WhiteSmoke">M+</Button>
+      <Button Name="btnMMinus" Grid.Column="3" FontSize="14" 
+         BorderThickness="0" FontWeight="Bold" 
+         Background="WhiteSmoke">M-</Button>
+      <Button Name="btnMS" Grid.Column="4" FontSize="14" 
+         BorderThickness="0" FontWeight="Bold" 
+         Background="WhiteSmoke">MS</Button>
+    </Grid>
+    <Grid MinHeight="360"  Background="LightGray" >
+      <Grid.ColumnDefinitions>
+        <ColumnDefinition/>
+        <ColumnDefinition/>
+        <ColumnDefinition/>
+        <ColumnDefinition/>
+      </Grid.ColumnDefinitions>
+      <Grid.RowDefinitions>
+        <RowDefinition/>
+        <RowDefinition/>
+        <RowDefinition/>
+        <RowDefinition/>
+        <RowDefinition/>
+        <RowDefinition/>
+      </Grid.RowDefinitions>
+      <Button Grid.Row="0" Grid.Column="0" BorderThickness="0" 
+         FontSize="18" Margin="2,1,1,1">%</Button>
+      <Button Grid.Row="0" Grid.Column="1" BorderThickness="0"          
+         FontSize="18" Margin="1" Click="Sqrt_Click">√</Button>
+      <Button Grid.Row="0" Grid.Column="2" BorderThickness="0" 
+         FontSize="18" Margin="1" Click="Sqr_Click">x²</Button>
+      <Button Grid.Row="0" Grid.Column="3" BorderThickness="0" 
+         FontSize="18" Margin="1,1,2,1" Click="Reci_Click">1/x</Button>
+
+      <Button Grid.Row="1" Grid.Column="0" BorderThickness="0" 
+         FontSize="18" Margin="2,1,1,1" Click="CE_Click">CE</Button>
+      <Button Grid.Row="1" Grid.Column="1" BorderThickness="0" 
+         FontSize="18" Margin="1" Click="C_CLick">C</Button>
+      <Button Grid.Row="1" Grid.Column="2" BorderThickness="0" 
+         FontSize="18" Margin="1">⌫</Button>
+      <Button Grid.Row="1" Grid.Column="3" BorderThickness="0" 
+         FontSize="25" Margin="1,1,2,1" Click="Op_Click">÷</Button>
+
+      <Button Grid.Row="2" Grid.Column="0" BorderThickness="0" 
+         Margin="2,1,1,1" FontSize="22" FontWeight="Bold" 
+         Background="WhiteSmoke" Click="Number_Click">7</Button>
+      <Button Grid.Row="2" Grid.Column="1" BorderThickness="0" 
+         Margin="1" FontSize="22" FontWeight="Bold" 
+         Background="WhiteSmoke" Click="Number_Click">8</Button>
+      <Button Grid.Row="2" Grid.Column="2" BorderThickness="0" 
+         Margin="1" FontSize="22" FontWeight="Bold" 
+         Background="WhiteSmoke" Click="Number_Click">9</Button>
+      <Button Grid.Row="2" Grid.Column="3" BorderThickness="0" 
+         Margin="1,1,2,1" FontSize="25" Click="Op_Click">×</Button>
+
+      <Button Grid.Row="3" Grid.Column="0" BorderThickness="0" 
+         Margin="2,1,1,1" FontSize="22" FontWeight="Bold" 
+         Background="WhiteSmoke" Click="Number_Click">4</Button>
+      <Button Grid.Row="3" Grid.Column="1" BorderThickness="0" 
+         Margin="1" FontSize="22" FontWeight="Bold" 
+         Background="WhiteSmoke" Click="Number_Click">5</Button>
+      <Button Grid.Row="3" Grid.Column="2" BorderThickness="0" 
+         Margin="1" FontSize="22" FontWeight="Bold" 
+         Background="WhiteSmoke" Click="Number_Click">6</Button>
+      <Button Grid.Row="3" Grid.Column="3" BorderThickness="0" 
+         Margin="1,1,2,1" FontSize="25" Click="Op_Click">-</Button>
+
+      <Button Grid.Row="4" Grid.Column="0" BorderThickness="0" 
+         Margin="2,1,1,1" FontSize="22" FontWeight="Bold" 
+         Background="WhiteSmoke" Click="Number_Click">1</Button>
+      <Button Grid.Row="4" Grid.Column="1" BorderThickness="0" 
+         Margin="1" FontSize="22" FontWeight="Bold" 
+         Background="WhiteSmoke" Click="Number_Click">2</Button>
+      <Button Grid.Row="4" Grid.Column="2" BorderThickness="0" 
+         Margin="1" FontSize="22" FontWeight="Bold" 
+         Background="WhiteSmoke" Click="Number_Click">3</Button>
+      <Button Grid.Row="4" Grid.Column="3" BorderThickness="0" 
+         Margin="1,1,2,1" FontSize="25" Click="Op_Click">+</Button>
+
+      <Button Grid.Row="5" Grid.Column="0" BorderThickness="0" 
+         Margin="2,1,1,1" FontSize="22" FontWeight="Bold" Click="PM_Click">±</Button>
+      <Button Grid.Row="5" Grid.Column="1" BorderThickness="0" 
+         Margin="1" FontSize="22" FontWeight="Bold" 
+         Background="WhiteSmoke" Click="Number_Click">0</Button>
+      <Button Grid.Row="5" Grid.Column="2" BorderThickness="0" 
+         Margin="1" FontSize="22" FontWeight="Bold" Click="Dot_Click">.</Button>
+      <Button Grid.Row="5" Grid.Column="3" BorderThickness="0" 
+         Margin="1,1,2,1" FontSize="25" Click="Equal_Click">=</Button>
+    </Grid>
+  </DockPanel>
+</Window>
+
