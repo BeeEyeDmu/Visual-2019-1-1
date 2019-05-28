@@ -106,6 +106,10 @@ namespace A027_EcgPpg
 
       chart1.ChartAreas.Add("Draw");
 
+      // chart에서 영역 설정
+      chart1.ChartAreas["Draw"].CursorX.IsUserEnabled = true;
+      chart1.ChartAreas["Draw"].CursorX.IsUserSelectionEnabled = true;
+
       chart1.ChartAreas["Draw"].BackColor = Color.Black;
       chart1.ChartAreas["Draw"].AxisX.Minimum = 0;    //최소값
       chart1.ChartAreas["Draw"].AxisX.Maximum = ecgCount;
@@ -151,16 +155,16 @@ namespace A027_EcgPpg
 
     private void chart1_Click(object sender, EventArgs e)
     {
-      if(scrolling == true)
-      {
-        t.Stop();
-        scrolling = false;
-      }
-      else
-      {
-        t.Start();
-        scrolling = true;
-      }
+      //if(scrolling == true)
+      //{
+      //  t.Stop();
+      //  scrolling = false;
+      //}
+      //else
+      //{
+      //  t.Start();
+      //  scrolling = true;
+      //}
     }
 
     // View All 메뉴
@@ -169,6 +173,11 @@ namespace A027_EcgPpg
       chart1.ChartAreas["Draw"].AxisX.ScaleView.Zoom(0, ecgCount);
       t.Stop();
       scrolling = false;
+    }
+
+    private void chart1_SelectionRangeChanged(object sender, CursorEventArgs e)
+    {
+      MessageBox.Show(e.ToString());
     }
   }
 }

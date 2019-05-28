@@ -1,0 +1,10 @@
+C:\Users\bikang\Source\Repos\BeeEyeDmu\Visual-2019-1-1\A027_EcgPpg\bin\Debug\A027_EcgPpg.exe.config
+C:\Users\bikang\Source\Repos\BeeEyeDmu\Visual-2019-1-1\A027_EcgPpg\bin\Debug\A027_EcgPpg.exe
+C:\Users\bikang\Source\Repos\BeeEyeDmu\Visual-2019-1-1\A027_EcgPpg\bin\Debug\A027_EcgPpg.pdb
+C:\Users\bikang\Source\Repos\BeeEyeDmu\Visual-2019-1-1\A027_EcgPpg\obj\Debug\A027_EcgPpg.csprojAssemblyReference.cache
+C:\Users\bikang\Source\Repos\BeeEyeDmu\Visual-2019-1-1\A027_EcgPpg\obj\Debug\A027_EcgPpg.Form1.resources
+C:\Users\bikang\Source\Repos\BeeEyeDmu\Visual-2019-1-1\A027_EcgPpg\obj\Debug\A027_EcgPpg.Properties.Resources.resources
+C:\Users\bikang\Source\Repos\BeeEyeDmu\Visual-2019-1-1\A027_EcgPpg\obj\Debug\A027_EcgPpg.csproj.GenerateResource.cache
+C:\Users\bikang\Source\Repos\BeeEyeDmu\Visual-2019-1-1\A027_EcgPpg\obj\Debug\A027_EcgPpg.csproj.CoreCompileInputs.cache
+C:\Users\bikang\Source\Repos\BeeEyeDmu\Visual-2019-1-1\A027_EcgPpg\obj\Debug\A027_EcgPpg.exe
+C:\Users\bikang\Source\Repos\BeeEyeDmu\Visual-2019-1-1\A027_EcgPpg\obj\Debug\A027_EcgPpg.pdb
