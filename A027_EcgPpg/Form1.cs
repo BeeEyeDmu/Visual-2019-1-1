@@ -155,6 +155,8 @@ namespace A027_EcgPpg
 
     private void chart1_Click(object sender, EventArgs e)
     {
+      // how can get data from chart on mouse click
+      
       //if(scrolling == true)
       //{
       //  t.Stop();
@@ -175,9 +177,16 @@ namespace A027_EcgPpg
       scrolling = false;
     }
 
-    private void chart1_SelectionRangeChanged(object sender, CursorEventArgs e)
+    private void chart1_MouseClick(object sender, MouseEventArgs e)
     {
-      MessageBox.Show(e.ToString());
+      HitTestResult htr = chart1.HitTest(e.X, e.Y);
+      if (htr.ChartElementType == ChartElementType.DataPoint)
+      {
+        string s = string.Format("count: {0}, ECG: {1}, PPG: {2}", htr.PointIndex,
+          chart1.Series["ECG"].Points[htr.PointIndex].YValues[0],
+          chart1.Series["PPG"].Points[htr.PointIndex].YValues[0]);
+        MessageBox.Show(s);
+      }
     }
   }
 }

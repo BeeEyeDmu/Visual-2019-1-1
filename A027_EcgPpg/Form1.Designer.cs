@@ -80,8 +80,8 @@
       this.chart1.Size = new System.Drawing.Size(581, 366);
       this.chart1.TabIndex = 1;
       this.chart1.Text = "chart1";
-      this.chart1.SelectionRangeChanged += new System.EventHandler<System.Windows.Forms.DataVisualization.Charting.CursorEventArgs>(this.chart1_SelectionRangeChanged);
       this.chart1.Click += new System.EventHandler(this.chart1_Click);
+      this.chart1.MouseClick += new System.Windows.Forms.MouseEventHandler(this.chart1_MouseClick);
       // 
       // Form1
       // 
