@@ -1,0 +1,19 @@
+﻿<Window x:Class="A031_WPFCalc.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:A031_WPFCalc"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="300" Width="300">
+    <Grid>
+        <TextBlock x:Name="textBlock" HorizontalAlignment="Left" Margin="49,41,0,0" TextWrapping="Wrap" Text="숫자1" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtNo1" HorizontalAlignment="Left" Height="23" Margin="112,40,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBlock x:Name="textBlock_Copy" HorizontalAlignment="Left" Margin="49,83,0,0" TextWrapping="Wrap" Text="숫자2" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtNo2" HorizontalAlignment="Left" Height="23" Margin="112,76,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="btnCalc" Content="계산하기" HorizontalAlignment="Left" Margin="112,130,0,0" VerticalAlignment="Top" Width="75" RenderTransformOrigin="0.49,-0.439" Click="btnCalc_Click"/>
+        <TextBlock x:Name="textBlock_Copy1" HorizontalAlignment="Left" Margin="49,191,0,0" TextWrapping="Wrap" Text="합계" VerticalAlignment="Top"/>
+        <TextBox x:Name="txtresult" HorizontalAlignment="Left" Height="23" Margin="112,184,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+
+    </Grid>
+</Window>

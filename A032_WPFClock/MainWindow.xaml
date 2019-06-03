@@ -1,0 +1,25 @@
+﻿<Window x:Class="A032_WPFClock.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:A032_WPFClock"
+        mc:Ignorable="d"
+        Title="Analog Clock in WPF" Height="360" Width="350">
+    <Grid>
+        <Menu>
+            <MenuItem Header="시계종류">
+                <MenuItem Header="아날로그"/>
+                <MenuItem Header="디지털"/>
+            </MenuItem>
+            <MenuItem Header="표시단위">
+                <MenuItem Header="초"/>
+                <MenuItem Header="밀리초"/>
+            </MenuItem>
+        </Menu>
+        <Canvas Name="canvas1" Width="250" Height="250"
+                Background="AntiqueWhite">
+            <Ellipse Name="aClock" Width="250" Height="250"/>
+        </Canvas>
+    </Grid>
+</Window>

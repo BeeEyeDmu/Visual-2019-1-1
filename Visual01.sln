@@ -49,6 +49,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "A029_FormDClock", "A029_For
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "A030_FormClock", "A030_FormClock\A030_FormClock.csproj", "{49A57A83-8C31-41AC-867A-BE3A49C8A427}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "A031_WPFCalc", "A031_WPFCalc\A031_WPFCalc.csproj", "{49A639CD-CDD1-4D67-9B6D-9D6BE4F5B36E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "A032_WPFClock", "A032_WPFClock\A032_WPFClock.csproj", "{03B78FC2-C3BC-4E04-8041-3D736370DEEA}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -147,6 +151,14 @@ Global
 		{49A57A83-8C31-41AC-867A-BE3A49C8A427}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{49A57A83-8C31-41AC-867A-BE3A49C8A427}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{49A57A83-8C31-41AC-867A-BE3A49C8A427}.Release|Any CPU.Build.0 = Release|Any CPU
+		{49A639CD-CDD1-4D67-9B6D-9D6BE4F5B36E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{49A639CD-CDD1-4D67-9B6D-9D6BE4F5B36E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{49A639CD-CDD1-4D67-9B6D-9D6BE4F5B36E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{49A639CD-CDD1-4D67-9B6D-9D6BE4F5B36E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{03B78FC2-C3BC-4E04-8041-3D736370DEEA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{03B78FC2-C3BC-4E04-8041-3D736370DEEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{03B78FC2-C3BC-4E04-8041-3D736370DEEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{03B78FC2-C3BC-4E04-8041-3D736370DEEA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
