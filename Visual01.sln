@@ -53,6 +53,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "A031_WPFCalc", "A031_WPFCal
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "A032_WPFClock", "A032_WPFClock\A032_WPFClock.csproj", "{03B78FC2-C3BC-4E04-8041-3D736370DEEA}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "A033_WPFMatchingGame", "A033_WPFMatchingGame\A033_WPFMatchingGame.csproj", "{6C80FAE6-2CE8-4781-8C71-D7398FDD861C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -159,6 +161,10 @@ Global
 		{03B78FC2-C3BC-4E04-8041-3D736370DEEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{03B78FC2-C3BC-4E04-8041-3D736370DEEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{03B78FC2-C3BC-4E04-8041-3D736370DEEA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6C80FAE6-2CE8-4781-8C71-D7398FDD861C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C80FAE6-2CE8-4781-8C71-D7398FDD861C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C80FAE6-2CE8-4781-8C71-D7398FDD861C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C80FAE6-2CE8-4781-8C71-D7398FDD861C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
