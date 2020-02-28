@@ -23,6 +23,7 @@ namespace A025_SnakeBite
     public MainWindow()
     {
       InitializeComponent();
+      this.Title = "Snake Bite";
     }
 
     private void btnStart_Click(object sender, RoutedEventArgs e)
